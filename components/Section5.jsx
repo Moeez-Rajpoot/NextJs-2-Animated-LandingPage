@@ -36,8 +36,8 @@ const Section5 = () => {
   }, [animationRan]);
 
   return (
-    <div>
-      <div className="relative h-fit w-full bg-center bg-cover flex justify-center items-center overflow-hidden">
+    <>
+      <div className="relative h-fit w-full bg-center bg-cover flex justify-center items-center overflow-hidden snap-start">
         {/* Background Image */}
         <div
           ref={backgroundRef}
@@ -130,7 +130,7 @@ const Section5 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

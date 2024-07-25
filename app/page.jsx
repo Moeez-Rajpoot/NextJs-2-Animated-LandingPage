@@ -7,45 +7,44 @@ import Section2 from "@/components/Section2";
 import Section3 from "@/components/Section3";
 import Section4 from "@/components/Section4";
 import Section5 from "@/components/Section5";
+import Section6 from "@/components/Section6";
 
 const Home = () => {
   const backgroundRef = useRef(null);
-  const [animationRan, setAnimationRan] = useState(false);
+  const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+  const [activeSection, setActiveSection] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !animationRan) {
-            console.log("intersecting");
-            entry.target.classList.remove("animate-zoom-in-out");
-            void entry.target.offsetWidth; 
-            entry.target.classList.add("animate-zoom-in-out");
-            setAnimationRan(true); 
+          if (entry.isIntersecting) {
+            const index = sectionRefs.findIndex((ref) => ref.current === entry.target);
+            setActiveSection(index);
           }
         });
       },
-      { threshold: 1.0 }
+      { threshold: 0.5 } // Adjust threshold as needed
     );
 
-    if (backgroundRef.current) {
-      observer.observe(backgroundRef.current);
-    }
+    sectionRefs.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
 
     return () => {
-      if (backgroundRef.current) {
-        observer.unobserve(backgroundRef.current);
-      }
+      sectionRefs.forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
     };
-  }, [animationRan]);
-
-  const resetAnimation = () => {
-    setAnimationRan(false);
-  };
+  }, []);
 
   return (
-    <div className="overflow-hidden">
-      <div className="relative h-screen w-full bg-center bg-cover flex justify-center items-center overflow-hidden">
+    <div className="overflow-hidden h-screen w-full snap-y snap-mandatory overflow-y-scroll">
+      <div ref={sectionRefs[0]} className="relative h-screen w-full bg-center bg-cover flex justify-center items-center snap-start">
         {/* Background Image */}
         <div
           ref={backgroundRef}
@@ -54,7 +53,7 @@ const Home = () => {
             backgroundImage: "url('/assets/img/background/img-09.jpg')",
           }}
         ></div>
-        
+
         {/* Content */}
         <div className="z-10 flex justify-center items-center">
           <div id="left" className="flex flex-col w-full items-center justify-center -mt-22 mr-5 gap-16">
@@ -95,20 +94,33 @@ const Home = () => {
           <div id="right" className="fixed right-16 text-white">
             <ul className="gap-1 flex flex-col">
               {[...Array(6)].map((_, index) => (
-                <li key={index} className="h-5 w-1 bg-white rounded-sm"></li>
+                <li
+                  key={index}
+                  className={`w-1 rounded-sm transition-all duration-300 ${
+                    activeSection === index ? "h-10 bg-gray-50" : "h-5 bg-gray-300"
+                  }`}
+                ></li>
               ))}
             </ul>
           </div>
         </div>
       </div>
 
-      <Section2/>
-
-      <Section3/>
-
-      <Section4/>
-
-      <Section5/>
+      <div ref={sectionRefs[1]} className="snap-start h-screen">
+        <Section2 />
+      </div>
+      <div ref={sectionRefs[2]} className="snap-start h-screen">
+        <Section3 />
+      </div>
+      <div ref={sectionRefs[3]} className="snap-start h-screen">
+        <Section4 />
+      </div>
+      <div ref={sectionRefs[4]} className="snap-start h-screen">
+        <Section5 />
+      </div>
+      <div ref={sectionRefs[5]} className="snap-start h-screen">
+        <Section6 />
+      </div>
     </div>
   );
 };

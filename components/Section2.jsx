@@ -37,7 +37,7 @@ const Section2 = () => {
 
   return (
     <div>
-      <div className="relative h-screen w-full bg-center bg-cover flex justify-center items-center overflow-hidden">
+      <div className="relative h-screen w-full bg-center bg-cover flex justify-center items-center overflow-hidden snap-start">
         {/* Background Image */}
         <div
           ref={backgroundRef}
