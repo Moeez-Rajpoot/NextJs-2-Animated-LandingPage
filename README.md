@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project
 
 First, run the development server:
 
-# My Awesome Project
+# Landing Page In Next Js
 
 Welcome to my awesome project! This project showcases a landing page with beautiful animations using technologies like Nextjs , Tailwind css and React Awesome Reveal
 
