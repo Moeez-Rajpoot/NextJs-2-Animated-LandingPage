@@ -82,7 +82,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden h-screen w-full snap-y snap-mandatory overflow-y-scroll">
+    <div className="overflow-hidden h-screen w-full snap-y snap-mandatory overflow-y-scroll  hide-scrollbar">
       <Fade direction="up" delay={1900} >
       <Navbar />
       </Fade>
