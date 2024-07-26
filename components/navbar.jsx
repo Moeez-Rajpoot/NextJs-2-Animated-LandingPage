@@ -39,7 +39,7 @@ const Navbar = () => {
   const getLinkClass = (path) => {
     return pathname === path
       ? `flex py-3 sm:px-2 text-slate-900 items-center sm:mt-0 justify-center sm:mb-7 mt-2 md:mb-0 md:mr-5 bg-slate-300 rounded-sm text-nowrap " ${prompt.className}`
-      : `flex py-3 sm:px-2 text-white items-center sm:mt-0 justify-center sm:mb-7 mt-2 md:mb-0 md:mr-5  hover:underline text-nowrap  ${prompt.className}`;
+      : `flex py-3 sm:px-2 text-gray-300 items-center sm:mt-0 justify-center sm:mb-7 mt-2 md:mb-0 md:mr-5  hover:text-white text-nowrap  ${prompt.className}`;
   };
 
   return (
@@ -99,9 +99,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div id="icons" className="flex justify-center items-center gap-7 mr-4">
-        <div id="fb">
-          <FacebookIcon />
+      <div id="icons" className="flex justify-center items-center gap-7 mr-10">
+        <div id="fb" >
+          <FacebookIcon
+          />
         </div>
         <div id="tw">
           <TwitterIcon />
