@@ -18,6 +18,12 @@ This project is a demonstration of modern web design techniques and animations. 
 - Modern UI/UX
 - Easy to Customize
 
+## Video Demo
+
+Watch the video demo below:
+
+[Watch the video](https://stdntpartners-my.sharepoint.com/:v:/g/personal/muhammadmoeez_khan_studentambassadors_com/EUCxN65xbphJhdDBT0T4tNwBus7ZdSUqJbyxFSxY9ZDzpw?e=5SnjEI)
+
 ## Screenshots
 
 ### Section 1
