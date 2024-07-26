@@ -16,13 +16,13 @@ const Section2 = () => {
           if (entry.isIntersecting && !animationRan) {
             console.log("Section 2 intersecting");
             entry.target.classList.remove("animate-zoom-in-out");
-            void entry.target.offsetWidth; // Trigger reflow
+            void entry.target.offsetWidth;
             entry.target.classList.add("animate-zoom-in-out");
-            setAnimationRan(true); // Set the flag to true after the animation runs
+            setAnimationRan(true);
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 }
     );
 
     if (backgroundRef.current) {
@@ -34,7 +34,7 @@ const Section2 = () => {
         observer.unobserve(backgroundRef.current);
       }
     };
-  }, [animationRan]);
+  }, []);
 
   return (
     <div>
