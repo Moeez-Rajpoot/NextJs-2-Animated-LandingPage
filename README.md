@@ -22,7 +22,7 @@ This project is a demonstration of modern web design techniques and animations. 
 
 Watch the video demo below:
 
-[![Watch the video]](https://github.com/Moeez-Rajpoot/NextJs-2-Animated-LandingPage/blob/main/Video/project.mp4)
+[Watch the video](https://stdntpartners-my.sharepoint.com/:v:/g/personal/muhammadmoeez_khan_studentambassadors_com/EUCxN65xbphJhdDBT0T4tNwBus7ZdSUqJbyxFSxY9ZDzpw?e=5SnjEI)
 
 ## Screenshots
 
