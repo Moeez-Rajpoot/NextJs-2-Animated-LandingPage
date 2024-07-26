@@ -19,13 +19,13 @@ const Section4 = () => {
           if (entry.isIntersecting && !animationRan) {
             console.log("Section 2 intersecting");
             entry.target.classList.remove("animate-zoom-in-out");
-            void entry.target.offsetWidth; // Trigger reflow
+            void entry.target.offsetWidth;
             entry.target.classList.add("animate-zoom-in-out");
-            setAnimationRan(true); // Set the flag to true after the animation runs
+            setAnimationRan(true);
           }
         });
       },
-      { threshold: 1.0 } // Adjust the threshold as needed
+      { threshold: 0.5 }
     );
 
     if (backgroundRef.current) {
@@ -37,7 +37,7 @@ const Section4 = () => {
         observer.unobserve(backgroundRef.current);
       }
     };
-  }, [animationRan]);
+  }, []);
 
   return (
     <>
@@ -88,44 +88,60 @@ const Section4 = () => {
                 </Fade>
               </div>
               <div>
-                <h1 className="text-xl font-semibold">Messages</h1>
-                <p className="text-slate-300 mt-3">
-                  Scan entire conversations in a chat-like view.
-                </p>
+                <Fade direction="left" delay={1700}>
+                  <h1 className="text-xl font-semibold">Messages</h1>
+                </Fade>
+                <Fade direction="left" delay={1750}>
+                  <p className="text-slate-300 mt-3">
+                    Scan entire conversations in a chat-like view.
+                  </p>
+                </Fade>
               </div>
             </div>
 
             <div className="flex mt-8">
               <div>
-                <h1 className="text-xl font-semibold">Music Center</h1>
-                <p className="text-slate-300 mt-3">
-                  Scan entire conversations in a chat-like view.
-                </p>
+                <Fade direction="left" delay={1800}>
+                  <h1 className="text-xl font-semibold">Music Center</h1>
+                </Fade>
+                <Fade direction="left" delay={1850}>
+                  <p className="text-slate-300 mt-3">
+                    Scan entire conversations in a chat-like view.
+                  </p>
+                </Fade>
               </div>
               <div>
-                <h1 className="text-xl font-semibold">Channals</h1>
-                <p className="text-slate-300 mt-3">
-                  Scan entire conversations in a chat-like view.
-                </p>
+                <Fade direction="left" delay={1900}>
+                  <h1 className="text-xl font-semibold">Channals</h1>
+                </Fade>
+                <Fade direction="left" delay={1950}>
+                  <p className="text-slate-300 mt-3">
+                    Scan entire conversations in a chat-like view.
+                  </p>
+                </Fade>
               </div>
             </div>
           </div>
           <div className="w-[44%] h-full pl-5 " id="sectioncontent">
-            <Image
-              className="rounded-md"
-              alt="IMAGE1"
-              src={Img1}
-              width={450}
-              height={450}
-            ></Image>
+            <Fade direction="up" delay={2000}>
+              <Image
+                className="rounded-md"
+                alt="IMAGE1"
+                src={Img1}
+                width={450}
+                height={450}
+              ></Image>
+            </Fade>
 
-            <Image
-              className="rounded-md mt-7"
-              alt="IMAGE1"
-              src={Img2}
-              width={450}
-              height={450}
-            ></Image>
+            <Fade direction="up" delay={2050}>
+              <Image
+                className="rounded-md mt-7"
+                alt="IMAGE1"
+                src={Img2}
+                width={450}
+                height={450}
+              ></Image>
+            </Fade>
           </div>
         </div>
       </div>

@@ -63,7 +63,7 @@ const Navbar = () => {
             <li>
               <a
                 className={getLinkClass("/dashboard/users")}
-                href="#section1"
+                href="#"
               >
                 Tour <i className="fa-solid fa-users"></i>
               </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
             <li>
               <a
                 className={getLinkClass("/dashboard/addcourse")}
-                href="#section2"
+                href="#"
               
               >
                 Upgrade <i className="fa-solid fa-plus"></i>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <li>
               <a
                 className={getLinkClass("/dashboard/courses")}
-                href="#section3"
+                href="#"
                
               >
                 Help <i className="fa-brands fa-discourse"></i>
@@ -89,7 +89,7 @@ const Navbar = () => {
             <li>
               <a
                 className={getLinkClass("/dashboard/courses")}
-                href="#section4"
+                href="#"
             
               >
                 Explore <i className="fa-brands fa-discourse"></i>

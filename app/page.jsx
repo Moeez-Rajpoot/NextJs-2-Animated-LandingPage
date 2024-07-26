@@ -83,7 +83,7 @@ const Home = () => {
 
   return (
     <div className="overflow-hidden h-screen w-full snap-y snap-mandatory overflow-y-scroll">
-      <Fade direction="up" delay={1900} triggerOnce>
+      <Fade direction="up" delay={1900} >
       <Navbar />
       </Fade>
       <div
@@ -105,13 +105,13 @@ const Home = () => {
             id="left"
             className="flex flex-col w-full items-center justify-center -mt-22 mr-5 gap-16"
           >
-            <Fade delay={2000} fraction={0} triggerOnce>
+            <Fade delay={2000} fraction={0}>
               <div className="ml-6 mr-5 w-64">
                 <AcmeLogo color="#ffffff" />
               </div>
             </Fade>
 
-            <Fade delay={2200} triggerOnce>
+            <Fade delay={2200} >
               <div
                 id="playbutton"
                 className="hover:cursor-pointer hover:-translate-y-1 transition duration-300 ease-in"
@@ -126,7 +126,7 @@ const Home = () => {
             </Fade>
 
             <div id="section1content">
-              <Fade delay={2300} triggerOnce>
+              <Fade delay={2300} >
                 <div id="para">
                   <h3 className="text-xl text-center text-[#d3d8dc]">
                     Start now and get{" "}
@@ -139,21 +139,21 @@ const Home = () => {
                 id="fields"
                 className="flex justify-center mt-10 items-center gap-3"
               >
-                <Fade delay={2400} triggerOnce>
+                <Fade delay={2400} >
                   <input
                     type="text"
                     placeholder="Email"
                     className="w-56 h-14 rounded-md p-5 bg-white text-black"
                   />
                 </Fade>
-                <Fade delay={2500} triggerOnce>
+                <Fade delay={2500} >
                   <input
                     type="text"
                     placeholder="Password"
                     className="w-56 h-14 rounded-md p-5 bg-white text-black"
                   />
                 </Fade>
-                <Fade delay={2600} triggerOnce>
+                <Fade delay={2600} >
                   <input
                     type="text"
                     placeholder="Confirm Password"
@@ -161,7 +161,7 @@ const Home = () => {
                   />
                 </Fade>
 
-                <Fade delay={2700} triggerOnce>
+                <Fade delay={2700} >
                   <button className="bg-[#3098eb] h-14 flex justify-center items-center rounded-md p-5 hover:cursor-pointer hover:-translate-y-1 transition duration-300 ease-in hover:shadow-md">
                     Get Started
                   </button>
@@ -171,7 +171,7 @@ const Home = () => {
           </div>
 
           <div id="right" className="fixed right-16 text-white">
-          <Fade delay={2000} triggerOnce>
+          <Fade delay={2000} >
             <ul className="gap-1 flex flex-col">
               {[...Array(6)].map((_, index) => (
                 <li
