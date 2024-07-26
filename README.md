@@ -18,6 +18,12 @@ This project is a demonstration of modern web design techniques and animations. 
 - Modern UI/UX
 - Easy to Customize
 
+## Video Demo
+
+Watch the video demo below:
+
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://github.com/Moeez-Rajpoot/NextJs-2-Animated-LandingPage/blob/main/Video/project.mp4)
+
 ## Screenshots
 
 ### Section 1
