@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project
 
 ## Live Site
 
-Check out the live site [here](https://nextjs-slides-landingpage.vercel.app/).
+Check out the live site [here](https://nextjs-slides-landingpage.vercel.app/)
 
 ## Getting Started
 
