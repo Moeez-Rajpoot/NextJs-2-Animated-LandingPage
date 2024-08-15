@@ -102,7 +102,7 @@ const Home = () => {
         <div className="z-10 flex justify-center items-center">
           <div
             id="left"
-            className="flex flex-col w-full items-center justify-center -mt-22 mr-5 gap-16"
+            className="flex flex-col w-full items-center justify-center mt-40  sm:-mt-22 mr-5 gap-16"
           >
             <Fade delay={2000} fraction={0}>
               <div className="ml-6 mr-5 w-64">
@@ -113,7 +113,7 @@ const Home = () => {
             <Fade delay={2200} >
               <div
                 id="playbutton"
-                className="hover:cursor-pointer hover:-translate-y-1 transition duration-300 ease-in"
+                className=" hover:cursor-pointer hover:-translate-y-1 transition duration-300 ease-in"
               >
                 <Image
                   alt="Play button"
@@ -127,7 +127,7 @@ const Home = () => {
             <div id="section1content">
               <Fade delay={2300} >
                 <div id="para">
-                  <h3 className="text-xl text-center text-[#d3d8dc]">
+                  <h3 className="text-xl text-center mx-3 lg:mx-0 text-[#d3d8dc]">
                     Start now and get{" "}
                     <span className="font-bold">free bonus</span> on account
                   </h3>
@@ -136,7 +136,7 @@ const Home = () => {
 
               <div
                 id="fields"
-                className="flex justify-center mt-10 items-center gap-3"
+                className="flex flex-col lg:flex-row justify-center mt-10 items-center gap-3"
               >
                 <Fade delay={2400} >
                   <input
@@ -169,7 +169,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div id="right" className="fixed right-16 text-white">
+          <div id="right" className="fixed right-3 sm:right-16 text-white">
           <Fade delay={2000} >
             <ul className="gap-1 flex flex-col">
               {[...Array(6)].map((_, index) => (
