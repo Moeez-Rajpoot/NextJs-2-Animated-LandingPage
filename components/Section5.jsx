@@ -61,7 +61,7 @@ const Section5 = () => {
               </h2>
             </Fade>
             {/* Price Cards */}
-            <div className="flex justify-center items-center w-full space-x-8">
+            <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-3 lg:gap-0 lg:space-x-8">
               {/* Card 1 */}
               <Fade delay={1200}>
                 <div className="bg-white h-[80vh] p-6 rounded-lg flex flex-col items-center shadow-lg w-[100%]">

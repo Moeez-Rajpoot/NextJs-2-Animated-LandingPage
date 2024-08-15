@@ -51,7 +51,7 @@ const Section3 = () => {
         {/* Your Section2 Content */}
         <div className="z-10 flex justify-center items-center w-full h-screen pt-36">
           {/* Content */}
-          <div className="w-[56%] h-full pl-52">
+          <div className="w-full mx-5 lg:mx-0 lg:w-[56%] h-full lg:pl-52">
             <Fade delay={1000}>
             <h1
               className={`text-4xl font-light leading-snug mt-14 ${inter.className}`}
@@ -62,7 +62,7 @@ const Section3 = () => {
             </Fade>
 
             <Fade delay={1200}>
-            <p className="text-gray-200 text-2xl font-extralight pr-10 mt-5 leading-9">
+            <p className="text-gray-200 text-2xl font-extralight lg:pr-10 mt-5 leading-9">
               You must forget all your theories, all your ideas before the
               subject. What part of these is really your own will be expressed
               in your expression.

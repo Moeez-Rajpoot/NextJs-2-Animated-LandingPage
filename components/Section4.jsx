@@ -52,9 +52,9 @@ const Section4 = () => {
         ></div>
 
         {/* Your Section2 Content */}
-        <div className="z-10 flex justify-center items-center w-full h-screen pt-20">
+        <div className="z-10 flex flex-col mx-5 lg:mx-0 lg:flex-row justify-center items-center w-full h-screen pt-20">
           {/* Content */}
-          <div className="w-[56%] h-full pl-52 pr-20">
+          <div className="w-full mx-5 lg:mx-0 lg:w-[56%] h-full lg:pl-52 lg:pr-20">
             <Fade delay={1000}>
               <p className={`text-xl text-slate-300 ${inter.className}`}>
                 Case Study
@@ -122,7 +122,7 @@ const Section4 = () => {
               </div>
             </div>
           </div>
-          <div className="w-[44%] h-full pl-5 " id="sectioncontent">
+          <div className="hidden lg:block lg:w-[44%] h-full lg:pl-5 " id="sectioncontent">
             <Fade direction="up" delay={2000}>
               <Image
                 className="rounded-md"

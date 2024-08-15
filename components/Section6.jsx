@@ -56,7 +56,7 @@ const Section6 = () => {
           {/* Content */}
           <div className="mt-10">
             <Fade direction="up" delay={1000}>
-              <h2 className="text-6xl text-white font-extralight">
+              <h2 className=" text-5xl text-center lg:text-6xl text-white font-extralight">
                 Download Mobile App
               </h2>
             </Fade>
@@ -69,7 +69,7 @@ const Section6 = () => {
           </div>
 
           <Fade direction="up" delay={1200}>
-            <div className="mt-7 flex gap-3">
+            <div className="mt-7 flex flex-col lg:flex-row gap-3">
               <input
                 type="text"
                 placeholder="Email Address"
