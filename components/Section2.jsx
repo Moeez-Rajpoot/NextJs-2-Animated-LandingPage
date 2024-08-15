@@ -49,21 +49,18 @@ const Section2 = () => {
         ></div>
 
         {/* Your Section2 Content */}
-        <div className="z-10 mx-5 lg:mx-0 flex justify-center items-center w-full h-screen pt-10 lg:pt-36">
+        <div className="z-10 mx-4 lg:mx-0 flex justify-center items-center w-full h-screen pt-36">
           {/* Content */}
           <div className="hidden lg:block lg:w-[44%] h-full"></div>
-          <div className="w-[98%] lg:w-[56%] h-full " id="sectioncontent">
+          <div className="w-full lg:w-[56%] h-full " id="sectioncontent">
             <Fade delay={1400}>
-            <h1 className={`hidden lg:block text-4xl font-extralight mt-14 ${inter.className}`}>
+            <h1 className={`text-4xl font-extralight mt-14 ${inter.className}`}>
               Designing a product is designing a<br />{" "}
               <span>relationship</span>
             </h1>
-            <h1 className={`lg:hidden text-3xl font-extralight mt-14 ${inter.className}`}>
-              Designing a product is designing a relationship
-            </h1>
             </Fade>
             <Fade delay={1600}>
-            <p className="text-gray-200 text-2xl font-light pr-10 lg:pr-36 mt-5 leading-9">
+            <p className="text-gray-200 text-2xl font-light pr-36 mt-5 leading-9">
               Man was designed in a way in which he must eat in order to give
               him a solid reason to go to work everyday. This helps to keep him
               out of trouble. God is wise.
